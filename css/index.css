@@ -135,5 +135,72 @@ body {
   height: 100%;
 }
 html {
-  background-color: red;
+  font-size: 62.5%;
+}
+header {
+  height: 70%;
+  width: 100%;
+  border: 1px solid red;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  border: 1px solid yellow;
+}
+header div {
+  margin: 2% 5%;
+  background: lightgray;
+  height: 80%;
+  padding: 2% 4%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+header div img {
+  width: 25%;
+  border: 1px solid red;
+}
+header div .header-right {
+  flex-direction: column;
+}
+header div .header-right h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  border: 1px solid red;
+}
+header div .header-right h3 {
+  font-size: 2rem;
+  border: 1px solid red;
+}
+header div .header-right p {
+  font-size: 1.6rem;
+  border: 1px solid red;
+}
+header div .header-right a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  background: darkslategrey;
+}
+header div .header-right a:hover {
+  color: black;
+  background: ghostwhite;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-around;
+}
+.middle-content .middle-left-content h2 {
+  font-size: 2.5rem;
+}
+.middle-content .middle-left-content p {
+  font-size: 1.6rem;
+}
+.middle-content .middle-right-content h3 {
+  font-size: 2rem;
+}
+.middle-content .middle-right-content ul li {
+  font-size: 1.6rem;
+  border: 2px solid black;
 }

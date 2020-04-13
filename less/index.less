@@ -57,7 +57,104 @@ html, body {
     height: 100%;
 }
 
-html {
-	background-color: red;
+.link-mixin(){
+	text-decoration: none;
+	font-size: 2rem;
+	color: black;
 }
+
+html {
+	font-size: 62.5%;
+}
+
+header {
+	height: 70%;
+	width: 100%;
+	border: 1px solid red;
+
+	nav a {
+		.link-mixin();
+		border: 1px solid yellow;
+	}
+
+	div {
+		margin:2% 5%; 
+		background: lightgray;
+		height: 80%;
+		padding: 2% 4%;
+		border: 1px solid blue;
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			width: 25%;
+			border: 1px solid red;
+		}
+
+		.header-right {
+			flex-direction: column;
+
+			h1 {
+				font-size: 6rem;
+				font-weight: bold;
+				border: 1px solid red;
+			}
+	
+			h3 {
+				font-size: 2rem;
+				border: 1px solid red;
+			}
+	
+			p {
+				font-size: 1.6rem;
+				border: 1px solid red;
+			}
+	
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 2rem;
+				background: darkslategrey;
+	
+			}
+	
+			a:hover{
+				color: black;
+				background: ghostwhite;
+			}
+		}
+
+	}
+
+}
+
+.middle-content {
+	display: flex;
+	justify-content: space-around;
+
+	.middle-left-content{
+
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		p {
+			font-size:1.6rem;
+		}
+	}
+
+	.middle-right-content{
+
+		h3 {
+			font-size: 2rem;
+		}
+
+		ul li {
+			font-size: 1.6rem;
+			border: 2px solid black;
+		}
+	}
+}
+
+
 
