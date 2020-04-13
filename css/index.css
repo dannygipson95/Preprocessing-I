@@ -140,26 +140,37 @@ html {
 header {
   height: 70%;
   width: 100%;
-  border: 1px solid red;
 }
 header nav a {
   text-decoration: none;
   font-size: 2rem;
+  font-weight: bold;
   color: black;
-  border: 1px solid yellow;
+  padding: 0.5% 2%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding: 3% 5%;
+  }
 }
 header div {
   margin: 2% 5%;
   background: lightgray;
   height: 80%;
   padding: 2% 4%;
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header div {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+  }
+}
 header div img {
   width: 25%;
-  border: 1px solid red;
 }
 header div .header-right {
   flex-direction: column;
@@ -167,21 +178,31 @@ header div .header-right {
 header div .header-right h1 {
   font-size: 6rem;
   font-weight: bold;
-  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  header div .header-right h1 {
+    font-size: 3rem;
+  }
 }
 header div .header-right h3 {
   font-size: 2rem;
-  border: 1px solid red;
 }
 header div .header-right p {
   font-size: 1.6rem;
-  border: 1px solid red;
 }
 header div .header-right a {
+  width: 15%;
+  padding: 1%;
   text-decoration: none;
+  text-align: center;
   color: white;
   font-size: 2rem;
   background: darkslategrey;
+}
+@media (max-width: 500px) {
+  header div .header-right a {
+    width: 40%;
+  }
 }
 header div .header-right a:hover {
   color: black;
@@ -191,16 +212,83 @@ header div .header-right a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+  }
+}
+.middle-content .middle-left-content {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .middle-content .middle-left-content {
+    width: 90%;
+  }
+}
 .middle-content .middle-left-content h2 {
   font-size: 2.5rem;
 }
 .middle-content .middle-left-content p {
   font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 3%;
+}
+.middle-content .middle-right-content {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .middle-content .middle-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
 }
 .middle-content .middle-right-content h3 {
   font-size: 2rem;
+  padding-bottom: 4%;
 }
 .middle-content .middle-right-content ul li {
   font-size: 1.6rem;
+  padding: 2%;
   border: 2px solid black;
+}
+.bottom-content {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    padding-top: 4%;
+  }
+}
+.bottom-content h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5%;
+}
+@media (max-width: 500px) {
+  .bottom-content h3 {
+    padding-bottom: 4%;
+  }
+}
+.bottom-content table {
+  width: 90%;
+  height: 75%;
+  font-size: 1.6rem;
+}
+.bottom-content table .dark-row {
+  background-color: gainsboro;
+}
+footer {
+  text-align: center;
+  background: gainsboro;
+  padding: 0.5%;
+}
+footer p {
+  font-size: 1.2rem;
 }
